@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: 78a83ff63bf9c8d4eba277861ff7caec
+timeCreated: 1509586540
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Pegypta
+  fontNames:
+  - Pegypta
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
