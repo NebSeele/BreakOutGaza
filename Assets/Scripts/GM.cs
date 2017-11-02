@@ -13,8 +13,9 @@ public class GM : MonoBehaviour {
     public Text livesText;
     public GameObject gameOver;
     public GameObject levelClear;
-    public GameObject Sandbricks;
-    public GameObject GoldBricks;
+    [SerializeField] private GameObject[] m_bricks;
+ //   public GameObject Sandbricks;
+ //  public GameObject GoldBricks;
     public GameObject paddle;
     //public GameObject deathParticles;
     public static GM instance = null;
@@ -33,7 +34,7 @@ public class GM : MonoBehaviour {
     public void Setup()
     {
         clonePaddle = Instantiate(paddle, transform.position, Quaternion.identity) as GameObject;
-        Instantiate(Sandbricks, transform.position, Quaternion.identity);
+        Instantiate(m_bricks[0], transform.position, Quaternion.identity);
     }
 
     void CheckGameOver()
