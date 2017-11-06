@@ -50,6 +50,8 @@ ModelImporter:
     2300020: Box001_Part_7
     2300022: Box001_Part_8
     2300024: Box001_Part_9
+    2300026: Box001
+    2300028: Box001_Part_2
     3300000: Box001_MeshPart0
     3300002: Box001_MeshPart1
     3300004: Box001_Part_1
@@ -63,6 +65,8 @@ ModelImporter:
     3300020: Box001_Part_7
     3300022: Box001_Part_8
     3300024: Box001_Part_9
+    3300026: Box001
+    3300028: Box001_Part_2
     4300000: Box001_MeshPart0
     4300002: Box001_MeshPart1
     4300004: Box001_Part_1
@@ -76,6 +80,8 @@ ModelImporter:
     4300020: Box001_Part_8
     4300022: Box001_Part_9
     4300024: Box001_Part_10
+    4300026: Box001
+    4300028: Box001_Part_2
   materials:
     importMaterials: 1
     materialName: 0
@@ -126,7 +132,7 @@ ModelImporter:
     normalImportMode: 0
     tangentImportMode: 3
     normalCalculationMode: 4
-  importAnimation: 1
+  importAnimation: 0
   copyAvatar: 0
   humanDescription:
     serializedVersion: 2
