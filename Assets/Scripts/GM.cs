@@ -11,22 +11,35 @@ public class GM : MonoBehaviour {
     public int bricks = 54;
     public float resetDelay = 1f;
     public Text livesText;
-    public GameObject gameOver;
-    public GameObject levelClear;
+    public Image gameOver;
+    public Image levelClear;
     [SerializeField] private GameObject[] m_bricks;
  //   public GameObject Sandbricks;
  //  public GameObject GoldBricks;
     public GameObject paddle;
-    //public GameObject deathParticles;
-    public static GM instance = null;
+    public GameObject deathParticles;
+    private static GM instance = null;
 
     private GameObject clonePaddle;
 
-	// Use this for initialization
-	void Start () {
-        if (instance == null)
-            instance = this;
-        else if (instance != this)
+    public static GM Instance
+    {
+        get
+        {
+            return instance;
+        }
+
+        set
+        {
+            instance = value;
+        }
+    }
+
+    // Use this for initialization
+    void Start () {
+        if (Instance == null)
+            Instance = this;
+        else if (Instance != this)
             Destroy(gameObject);
         Setup();
     }

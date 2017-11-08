@@ -11,7 +11,7 @@ public class Brick : MonoBehaviour {
     private void OnCollisionEnter()
     {
  //       Instantiate(BrickParticle, Transform.localPosition, Quaternion.identity);
-        GM.instance.DestroyBrick();
+        GM.Instance.DestroyBrick();
        
         Destroy(gameObject);
     }
