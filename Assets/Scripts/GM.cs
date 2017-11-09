@@ -11,8 +11,8 @@ public class GM : MonoBehaviour {
     public int bricks = 54;
     public float resetDelay = 1f;
     public Text livesText;
-    public Image gameOver;
-    public Image levelClear;
+    public GameObject gameOver;
+    public GameObject levelClear;
     [SerializeField] private GameObject[] m_bricks;
  //   public GameObject Sandbricks;
  //  public GameObject GoldBricks;
