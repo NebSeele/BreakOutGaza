@@ -61,7 +61,7 @@ ModelImporter:
     4300018: Box001_Part_9
     4300020: Box001_Part_10
   materials:
-    importMaterials: 1
+    importMaterials: 0
     materialName: 0
     materialSearch: 1
   animations:
@@ -110,7 +110,7 @@ ModelImporter:
     normalImportMode: 0
     tangentImportMode: 3
     normalCalculationMode: 4
-  importAnimation: 1
+  importAnimation: 0
   copyAvatar: 0
   humanDescription:
     serializedVersion: 2
