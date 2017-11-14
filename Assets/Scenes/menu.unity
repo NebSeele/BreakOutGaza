@@ -1037,7 +1037,7 @@ Prefab:
     - target: {fileID: 2300000, guid: 274323d67cd97c84aa51613c0aedae11, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 03df4da4e66c7434f990fcb01d5443c6, type: 2}
+      objectReference: {fileID: 2100000, guid: 40276842e07042449a31916a5f1685c3, type: 2}
     - target: {fileID: 400000, guid: 274323d67cd97c84aa51613c0aedae11, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 39.759003
