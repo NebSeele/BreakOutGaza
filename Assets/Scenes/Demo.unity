@@ -6349,7 +6349,7 @@ MonoBehaviour:
   gameOver: {fileID: 0}
   levelClear: {fileID: 0}
   m_bricks:
-  - {fileID: 0}
+  - {fileID: 1588520912926988, guid: 6927a0ad2fb4a3a4bb90a2a23cb2ab4d, type: 2}
   - {fileID: 1872133763266004, guid: 9ec68a7082f35da489fa982fb36e9eae, type: 2}
   paddle: {fileID: 100000, guid: 274323d67cd97c84aa51613c0aedae11, type: 3}
   deathParticles: {fileID: 0}
