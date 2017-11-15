@@ -7,13 +7,18 @@ using System;
 
 public class GM : MonoBehaviour {
 
-    public int lives = 3;
-    public int bricks = 54;
-    public float resetDelay = 1f;
-    public Text livesText;
+    [Header("Player Stats")]
+    [SerializeField] private int m_lives = 3;
+    [SerializeField] private int m_score = 0;
+
+    [Header("Setup")]
+
+    private int m_brickCount = 54;
+    [SerializeField] private float m_resetDelay = 1f;
+    //public Text livesText;
     public GameObject gameOver;
     public GameObject levelClear;
-    [SerializeField] private GameObject[] m_bricks;
+    [SerializeField] private GameObject[] m_brickPrefabs;
  //   public GameObject Sandbricks;
  //  public GameObject GoldBricks;
     public GameObject paddle;
@@ -21,6 +26,11 @@ public class GM : MonoBehaviour {
     private static GM instance = null;
 
     private GameObject clonePaddle;
+
+    [Header("UI")]
+    [SerializeField] private HUDController m_hudController;
+
+
 
     public static GM Instance
     {
@@ -35,6 +45,26 @@ public class GM : MonoBehaviour {
         }
     }
 
+    public int lives
+    {
+        get {return m_lives;}
+        set {
+            m_lives = value;
+            if (m_hudController != null)
+                m_hudController.lives = m_lives;
+        }
+    }
+
+    public int score
+    {
+        get { return m_score; }
+        set
+        {
+            m_score = value;
+            if (m_hudController != null)
+                m_hudController.score = m_score;
+        }
+    }
     // Use this for initialization
     void Start () {
         if (Instance == null)
@@ -47,12 +77,13 @@ public class GM : MonoBehaviour {
     public void Setup()
     {
         clonePaddle = Instantiate(paddle, transform.position, Quaternion.identity) as GameObject;
-        Instantiate(m_bricks[0], transform.position, Quaternion.identity);
+        Instantiate(m_brickPrefabs[0], transform.position, Quaternion.identity);
+        score = score;
     }
 
     void CheckGameOver()
     {
-        if (bricks < 1)
+        if (m_brickCount < 1)
         {
             levelClear.SetActive(true);
             Time.timeScale = .25f;
@@ -81,9 +112,8 @@ public class GM : MonoBehaviour {
     public void loseLife()
     {
         lives--;
-        livesText.text = "Lives:" + lives;
         Destroy(clonePaddle);
-        Invoke("SetupPaddle", resetDelay);
+        Invoke("SetupPaddle", m_resetDelay);
         CheckGameOver();
     }
 
@@ -94,7 +124,7 @@ public class GM : MonoBehaviour {
 
     public void DestroyBrick()
     {
-        bricks--;
+        m_brickCount--;
         CheckGameOver();
     }
 }
