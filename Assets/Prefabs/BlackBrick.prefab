@@ -21,6 +21,7 @@ GameObject:
   - component: {fileID: 4650338501153640}
   - component: {fileID: 33686711374524294}
   - component: {fileID: 23945443217285906}
+  - component: {fileID: 114998884603241502}
   m_Layer: 0
   m_Name: BlackBrick
   m_TagString: Untagged
@@ -35,7 +36,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1990826899067582}
   m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: -4.4297543, y: 17.692945, z: 0.035065528}
+  m_LocalPosition: {x: -6, y: 8.17, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -80,3 +81,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1990826899067582}
   m_Mesh: {fileID: 4300000, guid: e7c8e48277965ae4ab3faf3ed7a4973e, type: 3}
+--- !u!114 &114998884603241502
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1990826899067582}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 306b056a05164d147bceeceffff65dab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_destructible: 0
+  m_pointValue: 
+  m_brickParticle: {fileID: 0}
+  m_destroyedVersion: {fileID: 0}
