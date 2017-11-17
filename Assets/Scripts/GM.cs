@@ -122,6 +122,12 @@ public class GM : MonoBehaviour {
         clonePaddle = Instantiate(paddle, transform.position, Quaternion.identity) as GameObject;
     }
 
+    public void PointCounter(int value)
+    {
+        Debug.Log("Point Value : " + value);
+        score += value;
+    }
+
     public void DestroyBrick()
     {
         m_brickCount--;
