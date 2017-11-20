@@ -7,20 +7,18 @@ using System;
 
 public class GM : MonoBehaviour {
 
-    [Header("Player Stats")]
+    [Header("Level Stats")]
     [SerializeField] private int m_lives = 3;
     [SerializeField] private int m_score = 0;
+    private bool m_levelEnded = false;
+    private bool m_levelCleared = false;
 
-    [Header("Setup")]
-
+    [Header("Level Setup")]
     private int m_brickCount = 54;
     [SerializeField] private float m_resetDelay = 1f;
-    //public Text livesText;
-    public GameObject gameOver;
-    public GameObject levelClear;
+
     [SerializeField] private GameObject[] m_brickPrefabs;
- //   public GameObject Sandbricks;
- //  public GameObject GoldBricks;
+
     public GameObject paddle;
     public GameObject deathParticles;
     private static GM instance = null;
@@ -72,6 +70,9 @@ public class GM : MonoBehaviour {
         else if (Instance != this)
             Destroy(gameObject);
         Setup();
+
+        if (m_hudController == null)
+            Debug.LogWarning("HUD Controller not set");
     }
 
     public void Setup()
@@ -85,13 +86,19 @@ public class GM : MonoBehaviour {
     {
         if (m_brickCount < 1)
         {
-            levelClear.SetActive(true);
-            Time.timeScale = .25f;
-            Invoke ("Reset, resetDelay");
+            m_levelEnded = true;
+            m_levelCleared = true;
         }
         if (lives < 1)
         {
-            gameOver.SetActive(true);
+            m_levelEnded = true;
+            m_levelCleared = false;
+        }
+
+        if (m_levelEnded)
+        {
+            if (m_hudController != null)
+                m_hudController.DisplayEnd(m_levelCleared);
             Time.timeScale = .25f;
             Invoke("Reset, resetDelay");
         }
@@ -111,9 +118,12 @@ public class GM : MonoBehaviour {
 
     public void loseLife()
     {
-        lives--;
-        Destroy(clonePaddle);
-        Invoke("SetupPaddle", m_resetDelay);
+        if (!m_levelEnded)
+        {
+            lives--;
+            Destroy(clonePaddle);
+            Invoke("SetupPaddle", m_resetDelay);
+        }
         CheckGameOver();
     }
 
@@ -124,13 +134,19 @@ public class GM : MonoBehaviour {
 
     public void PointCounter(int value)
     {
-        Debug.Log("Point Value : " + value);
-        score += value;
+        if (!m_levelEnded)
+        {
+            Debug.Log("Point Value : " + value);
+            score += value;
+        }
     }
 
     public void DestroyBrick()
     {
-        m_brickCount--;
+        if (!m_levelEnded)
+        {
+            m_brickCount--;
+        }
         CheckGameOver();
     }
 }
