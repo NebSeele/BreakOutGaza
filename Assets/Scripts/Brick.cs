@@ -17,6 +17,14 @@ public class Brick : MonoBehaviour {
 
     void Start()
     {
+        if (m_destructible)
+        {
+            GM.Instance.brickCount++;
+            Debug.Log("Added brick to game count");
+        }
+
+       
+
         //m_health = m_pointValue.Length;
     }
     private void OnCollisionEnter()

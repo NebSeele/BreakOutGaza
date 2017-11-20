@@ -9,46 +9,45 @@ Prefab:
     m_Modifications: []
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 1990826899067582}
+  m_RootGameObject: {fileID: 1603780677280454}
   m_IsPrefabParent: 1
---- !u!1 &1990826899067582
+--- !u!1 &1603780677280454
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 5
   m_Component:
-  - component: {fileID: 4650338501153640}
-  - component: {fileID: 33686711374524294}
-  - component: {fileID: 23945443217285906}
-  - component: {fileID: 114998884603241502}
-  - component: {fileID: 65125398968738106}
+  - component: {fileID: 4194112097821198}
+  - component: {fileID: 33486405402158158}
+  - component: {fileID: 23797412641199188}
+  - component: {fileID: 65367055627052730}
   m_Layer: 0
-  m_Name: BlackBrick
+  m_Name: GroundDebug
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4650338501153640
+--- !u!4 &4194112097821198
 Transform:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1990826899067582}
-  m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: -3.6, y: 8.17, z: 0}
+  m_GameObject: {fileID: 1603780677280454}
+  m_LocalRotation: {x: 0, y: 0, z: -0.7071068, w: 0.7071068}
+  m_LocalPosition: {x: 0, y: -23.6, z: -30.9}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!23 &23945443217285906
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -90}
+--- !u!23 &23797412641199188
 MeshRenderer:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1990826899067582}
+  m_GameObject: {fileID: 1603780677280454}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -56,7 +55,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: 45248bb3f6ae4fc45a25684129a6a3f7, type: 2}
+  - {fileID: 2100000, guid: 9676bedd358bbd04f8b9877a7fe718ec, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -75,37 +74,22 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!33 &33686711374524294
+--- !u!33 &33486405402158158
 MeshFilter:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1990826899067582}
-  m_Mesh: {fileID: 4300000, guid: e7c8e48277965ae4ab3faf3ed7a4973e, type: 3}
---- !u!65 &65125398968738106
+  m_GameObject: {fileID: 1603780677280454}
+  m_Mesh: {fileID: 4300000, guid: 06efe1081217cfe43a4aee90101c6439, type: 3}
+--- !u!65 &65367055627052730
 BoxCollider:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1990826899067582}
+  m_GameObject: {fileID: 1603780677280454}
   m_Material: {fileID: 13400000, guid: 0d37fe43c30579c4fa911161ce9cd2af, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 2, y: 1.0000002, z: 1.0000002}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &114998884603241502
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1990826899067582}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 306b056a05164d147bceeceffff65dab, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_destructible: 0
-  m_pointValue: 
-  m_brickParticle: {fileID: 0}
-  m_destroyedVersion: {fileID: 0}
+  m_Size: {x: 5.000001, y: 31.476463, z: 2.8506985}
+  m_Center: {x: -12.134569, y: -0.03299571, z: 31.43951}

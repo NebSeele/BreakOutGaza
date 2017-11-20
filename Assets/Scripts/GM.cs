@@ -14,7 +14,7 @@ public class GM : MonoBehaviour {
     private bool m_levelCleared = false;
 
     [Header("Level Setup")]
-    private int m_brickCount = 54;
+    private int m_brickCount = 0;
     [SerializeField] private float m_resetDelay = 1f;
 
     [SerializeField] private GameObject[] m_brickPrefabs;
@@ -63,16 +63,28 @@ public class GM : MonoBehaviour {
                 m_hudController.score = m_score;
         }
     }
+
+    public int brickCount
+    {
+        get { return m_brickCount; }
+        set { m_brickCount = value; }
+    }
+
     // Use this for initialization
-    void Start () {
+
+    private void Awake()
+    {
         if (Instance == null)
             Instance = this;
         else if (Instance != this)
             Destroy(gameObject);
-        Setup();
 
         if (m_hudController == null)
             Debug.LogWarning("HUD Controller not set");
+    }
+
+    void Start () {
+        Setup();
     }
 
     public void Setup()
