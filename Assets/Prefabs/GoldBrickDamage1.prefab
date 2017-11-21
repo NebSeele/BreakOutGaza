@@ -9,46 +9,44 @@ Prefab:
     m_Modifications: []
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 1470276915602452}
+  m_RootGameObject: {fileID: 1870453271077066}
   m_IsPrefabParent: 1
---- !u!1 &1470276915602452
+--- !u!1 &1870453271077066
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 5
   m_Component:
-  - component: {fileID: 4695555296984296}
-  - component: {fileID: 33758002538744338}
-  - component: {fileID: 23563887709789018}
-  - component: {fileID: 65933880711660256}
-  - component: {fileID: 114566507052483834}
+  - component: {fileID: 4887964712686690}
+  - component: {fileID: 33103798214151118}
+  - component: {fileID: 23063819928464282}
   m_Layer: 0
-  m_Name: GoldBrick
+  m_Name: GoldBrickDamage1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4695555296984296
+--- !u!4 &4887964712686690
 Transform:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1470276915602452}
+  m_GameObject: {fileID: 1870453271077066}
   m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 4.9, y: -1.86, z: 0}
+  m_LocalPosition: {x: 165.41971, y: -397.78165, z: -193.63272}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!23 &23563887709789018
+--- !u!23 &23063819928464282
 MeshRenderer:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1470276915602452}
+  m_GameObject: {fileID: 1870453271077066}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -56,7 +54,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: e5dab8fb696252348a240d04d53dd1ab, type: 2}
+  - {fileID: 2100000, guid: 4cdc7e8efb713384dbfe23d58b892f14, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -75,38 +73,10 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!33 &33758002538744338
+--- !u!33 &33103798214151118
 MeshFilter:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1470276915602452}
-  m_Mesh: {fileID: 4300000, guid: 31367d29caae17a4fbe1add82167f3e4, type: 3}
---- !u!65 &65933880711660256
-BoxCollider:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1470276915602452}
-  m_Material: {fileID: 13400000, guid: 0d37fe43c30579c4fa911161ce9cd2af, type: 2}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 2.0243065, y: 1.0243068, z: 1.0243068}
-  m_Center: {x: 0, y: 0, z: -0.00000002980233}
---- !u!114 &114566507052483834
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1470276915602452}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 306b056a05164d147bceeceffff65dab, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_destructible: 1
-  m_pointValue: 140000001e00000028000000
-  m_brickParticle: {fileID: 0}
-  m_destroyedVersion: {fileID: 1426100134292996, guid: 74d91132fa6479544a57512cb94bf835,
-    type: 2}
+  m_GameObject: {fileID: 1870453271077066}
+  m_Mesh: {fileID: 4300000, guid: c875975ddec3c99459a8c685873eac80, type: 3}
