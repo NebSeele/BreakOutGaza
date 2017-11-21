@@ -7,14 +7,17 @@ public class CameraShakeHelper : MonoBehaviour
 
     private CameraShake m_cameraShake;
     [SerializeField] float m_shakeMultiplier = 1.0f;
+    [SerializeField] string m_otherCollider = "Player";
+
     // Use this for initialization
     void Start()
     {
         m_cameraShake = Camera.main.GetComponent<CameraShake>();
     }
 
-    private void OnCollisionEnter()
+    private void OnCollisionEnter(Collider other)
     {
-        m_cameraShake.Shake(m_shakeMultiplier);
+        if (other.tag == m_otherCollider)
+            m_cameraShake.Shake(m_shakeMultiplier);
     }
 }

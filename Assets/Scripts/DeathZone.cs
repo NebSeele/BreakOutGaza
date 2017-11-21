@@ -4,8 +4,9 @@ using UnityEngine;
 
 public class DeathZone : MonoBehaviour {
 
-    private void OnTriggerEnter(Collider col)
+    private void OnTriggerEnter(Collider other)
     {
-        GM.Instance.loseLife();
+        if (other.tag =="Player")
+            GM.Instance.loseLife();
     }
 }
