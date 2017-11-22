@@ -128,7 +128,8 @@ public class GM : MonoBehaviour {
     {
         throw new NotImplementedException();
     }
-    /*  Does Game over really need this? Menuscript now has it to reset the level (Not that I can get it to work).
+
+    /*  Does Game over really need this? Menuscript now has it to reset the level (Not that I can get level Reset to work).
     void Reset()
     {
         Time.timeScale = 1f;

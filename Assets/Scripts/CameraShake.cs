@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class CameraShake : MonoBehaviour {
-
+    //This script is more of a placeholder at this point in time. It will be expanded upon in the Polish pass.
 
     /// <summary>
     /// Shakes the camera

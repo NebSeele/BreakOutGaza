@@ -37,13 +37,13 @@ public class MenuScript : MonoBehaviour {
 
     }
 
-    //Lets retry the level. Why won't this work?
+    //Lets retry the level. Why won't this work? Even the Debug log won't work
     public void RetryLevel()
     {
-        /* Testing purposes
-        Debug.Log("Retry the Leve."); */
+        //Testing purposes
+        Debug.Log ("Retry the Level");
         Time.timeScale = 1f;
-        SceneManager.GetActiveScene();
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
 
     }
 
@@ -61,10 +61,13 @@ public class MenuScript : MonoBehaviour {
         Debug.Log("High Score display not implemented");
     }
 
-    //Quit to Windows. Will implement in the PC Version of the project. Not needed for Mobile version.
+ 
+     //Quit to Windows. Will implement in the PC Version of the project. Not needed for Mobile version.
+     /* Not sure if this is correct/complete or even if I want/need to keep it.
     public void QuitToWindows()
     {
 
-        Debug.Log("Quit to Windows not implemented");
+        QuitGame.Quitting;
     }
+  */
 }

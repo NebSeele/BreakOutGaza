@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+//The Helper script for CameraShake.cs
 public class CameraShakeHelper : MonoBehaviour
 {
 

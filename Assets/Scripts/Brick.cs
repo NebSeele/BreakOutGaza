@@ -14,7 +14,7 @@ public class Brick : MonoBehaviour {
     [SerializeField] private GameObject m_brickParticle;
     [SerializeField] private GameObject m_destroyedVersion;
 
-
+    //Settting the In Game counter for remaining bricks
     void Start()
     {
         if (m_destructible)
@@ -27,6 +27,8 @@ public class Brick : MonoBehaviour {
 
         //m_health = m_pointValue.Length;
     }
+
+    //What happens when a brick is hit.
     private void OnCollisionEnter()
     {
         GM.Instance.PointCounter(m_pointValue[m_hitCount]);
@@ -38,6 +40,9 @@ public class Brick : MonoBehaviour {
             EndObject();
         }
     }
+
+    //Lets kill the brick! With particles and destroyed versions as effects.
+    //Must code in despawn of the destroyed versions in the polish passes.
 
     private void EndObject()
     {
