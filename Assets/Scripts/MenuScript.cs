@@ -23,8 +23,9 @@ public class MenuScript : MonoBehaviour {
         /* Testing purposes
         Debug.Log("Start New Game"); */
         Time.timeScale = 1f;
-        SceneManager.LoadScene(m_levelName, LoadSceneMode.Single);
-        
+        //SceneManager.LoadScene(m_levelName, LoadSceneMode.Single);
+        SceneManager.LoadScene(1, LoadSceneMode.Single);
+
     }
 
     //Return to the Main Menu. For In game menu's

@@ -9,6 +9,7 @@ public class GM : MonoBehaviour {
     //Declarations of our classes, arrays etc...
     [Header("Level Stats")]
     [SerializeField] private int m_lives = 3;
+    [SerializeField] private bool m_infiniteLives = false;
     [SerializeField] private int m_score = 0;
     private bool m_levelEnded = false;
     private bool m_levelCleared = false;
@@ -146,7 +147,8 @@ public class GM : MonoBehaviour {
 
         if (!m_levelEnded)
         {
-            lives--;
+            if (!m_infiniteLives)
+                lives--;
             Destroy(clonePaddle);
 
             SetupPaddle();

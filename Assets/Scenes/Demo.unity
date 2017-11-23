@@ -5370,6 +5370,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_lives: 3
+  m_infiniteLives: 0
   m_score: 0
   m_resetDelay: 1
   m_brickPrefabs:
@@ -10202,6 +10203,36 @@ Prefab:
         type: 2}
       propertyPath: m_Pivot.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114731946710071444, guid: d727e1868bfdbf74e9823fcc2ff9272e,
+        type: 2}
+      propertyPath: m_UiScaleMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114731946710071444, guid: d727e1868bfdbf74e9823fcc2ff9272e,
+        type: 2}
+      propertyPath: m_ReferenceResolution.x
+      value: 1242
+      objectReference: {fileID: 0}
+    - target: {fileID: 114731946710071444, guid: d727e1868bfdbf74e9823fcc2ff9272e,
+        type: 2}
+      propertyPath: m_ReferenceResolution.y
+      value: 2208
+      objectReference: {fileID: 0}
+    - target: {fileID: 114731946710071444, guid: d727e1868bfdbf74e9823fcc2ff9272e,
+        type: 2}
+      propertyPath: m_MatchWidthOrHeight
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 224408895832031180, guid: d727e1868bfdbf74e9823fcc2ff9272e,
+        type: 2}
+      propertyPath: m_AnchoredPosition.y
+      value: 32
+      objectReference: {fileID: 0}
+    - target: {fileID: 224899908523329208, guid: d727e1868bfdbf74e9823fcc2ff9272e,
+        type: 2}
+      propertyPath: m_AnchoredPosition.x
+      value: -88.00037
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d727e1868bfdbf74e9823fcc2ff9272e, type: 2}
