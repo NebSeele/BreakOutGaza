@@ -16,9 +16,9 @@ public class CameraShakeHelper : MonoBehaviour
         m_cameraShake = Camera.main.GetComponent<CameraShake>();
     }
 
-    private void OnCollisionEnter(Collider other)
+    private void OnCollisionEnter(Collision other)
     {
-        if (other.tag == m_otherCollider)
+        if (other.collider.tag == m_otherCollider)
             m_cameraShake.Shake(m_shakeMultiplier);
     }
 }

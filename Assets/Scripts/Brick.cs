@@ -29,11 +29,14 @@ public class Brick : MonoBehaviour {
     }
 
     //What happens when a brick is hit.
-    private void OnCollisionEnter()
+    private void OnCollisionEnter(Collision other)
     {
-        GM.Instance.PointCounter(m_pointValue[m_hitCount]);
-        m_hitCount++;
 
+        if (other.collider.tag == "Player")
+        {
+            GM.Instance.PointCounter(m_pointValue[m_hitCount]);
+            m_hitCount++;
+        }
 
         if (m_hitCount >= m_pointValue.Length && m_destructible)
         {

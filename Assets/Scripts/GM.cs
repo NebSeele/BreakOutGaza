@@ -19,7 +19,7 @@ public class GM : MonoBehaviour {
 
     [SerializeField] private GameObject[] m_brickPrefabs;
 
-    public GameObject paddle;
+    [SerializeField]  private GameObject m_paddlePrefab;
     public GameObject deathParticles;
     private static GM instance = null;
 
@@ -94,8 +94,9 @@ public class GM : MonoBehaviour {
     //Setting up the Paddle, Bricks and the score. Paddle needs fixing
     public void Setup()
     {
-        clonePaddle = Instantiate(paddle, transform.position, Quaternion.identity) as GameObject;
-        Instantiate(m_brickPrefabs[0], transform.position, Quaternion.identity);
+        SetupPaddle();
+        //Brick Set up
+        //Instantiate(m_brickPrefabs[0], transform.position, Quaternion.identity);
         score = score;
     }
 
@@ -118,7 +119,8 @@ public class GM : MonoBehaviour {
             if (m_hudController != null)
                 m_hudController.DisplayEnd(m_levelCleared);
             Time.timeScale = .25f;
-            Invoke("Reset, resetDelay");
+
+            //Invoke("Reset, resetDelay");
         }
 
     }
@@ -140,26 +142,31 @@ public class GM : MonoBehaviour {
     //Lets lose a life for hitting the deathzone. We need to destroy and reset the ball and Paddle
     public void loseLife()
     {
+        CheckGameOver();
+
         if (!m_levelEnded)
         {
             lives--;
             Destroy(clonePaddle);
-            Invoke("SetupPaddle", m_resetDelay);
+
+            SetupPaddle();
+            //Invoke("SetupPaddle", m_resetDelay);
         }
-        CheckGameOver();
+        
     }
 
-    //
+    //Clones a Paddle Mesh. In weird, off centre ways
     void SetupPaddle()
     {
-        clonePaddle = Instantiate(paddle, transform.position, Quaternion.identity) as GameObject;
+        clonePaddle = Instantiate(m_paddlePrefab, transform.position, transform.rotation) as GameObject;
+        //clonePaddle = Instantiate(m_paddlePrefab, transform.position, Quaternion.identity) as GameObject;
     }
 
     public void PointCounter(int value)
     {
         if (!m_levelEnded)
         {
-            Debug.Log("Point Value : " + value);
+           // Debug.Log("Point Value : " + value);
             score += value;
         }
     }

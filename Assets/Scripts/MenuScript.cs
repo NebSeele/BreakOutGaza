@@ -60,14 +60,4 @@ public class MenuScript : MonoBehaviour {
 
         Debug.Log("High Score display not implemented");
     }
-
- 
-     //Quit to Windows. Will implement in the PC Version of the project. Not needed for Mobile version.
-     /* Not sure if this is correct/complete or even if I want/need to keep it.
-    public void QuitToWindows()
-    {
-
-        QuitGame.Quitting;
-    }
-  */
 }
