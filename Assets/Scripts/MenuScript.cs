@@ -60,4 +60,10 @@ public class MenuScript : MonoBehaviour {
 
         Debug.Log("High Score display not implemented");
     }
+    public void QuitGame()
+    {
+        Application.Quit();
+        Debug.Log("Game has Quit! Thank You :)");
+    }
+        
 }
