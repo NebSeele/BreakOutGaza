@@ -322,7 +322,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   paddleSpeed: 1
-  m_touchInput: 0
+  m_touchInput: 1
 --- !u!135 &135396853941364276
 SphereCollider:
   m_ObjectHideFlags: 1
