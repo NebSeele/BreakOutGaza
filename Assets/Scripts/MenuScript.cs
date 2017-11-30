@@ -24,7 +24,7 @@ public class MenuScript : MonoBehaviour {
         Debug.Log("Start New Game"); */
         Time.timeScale = 1f;
         //SceneManager.LoadScene(m_levelName, LoadSceneMode.Single);
-        SceneManager.LoadScene(1, LoadSceneMode.Single);
+        SceneManager.LoadScene("PCWhiteBox", LoadSceneMode.Single);
 
     }
 
