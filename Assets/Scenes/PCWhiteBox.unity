@@ -5835,15 +5835,15 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4869157986962596, guid: fa907cc68cc7190478d887237d4250f9, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -20.3
+      value: -19.5
       objectReference: {fileID: 0}
     - target: {fileID: 4869157986962596, guid: fa907cc68cc7190478d887237d4250f9, type: 2}
       propertyPath: m_LocalPosition.z
-      value: -7.1
+      value: -8.1
       objectReference: {fileID: 0}
     - target: {fileID: 4869157986962596, guid: fa907cc68cc7190478d887237d4250f9, type: 2}
       propertyPath: m_LocalRotation.x
-      value: -0.98518234
+      value: -0.9612892
       objectReference: {fileID: 0}
     - target: {fileID: 4869157986962596, guid: fa907cc68cc7190478d887237d4250f9, type: 2}
       propertyPath: m_LocalRotation.y
@@ -5855,11 +5855,25 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4869157986962596, guid: fa907cc68cc7190478d887237d4250f9, type: 2}
       propertyPath: m_LocalRotation.w
-      value: 0.17151015
+      value: 0.27554145
       objectReference: {fileID: 0}
     - target: {fileID: 4869157986962596, guid: fa907cc68cc7190478d887237d4250f9, type: 2}
       propertyPath: m_RootOrder
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114017136102211630, guid: fa907cc68cc7190478d887237d4250f9,
+        type: 2}
+      propertyPath: ScrollX
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114017136102211630, guid: fa907cc68cc7190478d887237d4250f9,
+        type: 2}
+      propertyPath: ScrollY
+      value: -0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4869157986962596, guid: fa907cc68cc7190478d887237d4250f9, type: 2}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -148.011
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: fa907cc68cc7190478d887237d4250f9, type: 2}

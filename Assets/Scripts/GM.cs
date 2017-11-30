@@ -87,7 +87,7 @@ public class GM : MonoBehaviour
 		Setup ();
 	}
 
-	//Setting up the Paddle, Bricks and the score. Paddle needs fixing
+	//Setting up the Paddle, Bricks and the score.
 	public void Setup ()
 	{
 		SetupPaddle ();
