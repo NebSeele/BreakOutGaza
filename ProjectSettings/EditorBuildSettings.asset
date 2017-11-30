@@ -8,9 +8,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/menu.unity
     guid: b7ff3075ea396a34390d41e4eb56c599
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Demo.unity
     guid: 3953b185e1b5e6542aa87ca0262eab68
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/PCWhiteBox.unity
     guid: 8c757dbd385f8d54eab77e082f8ff304
