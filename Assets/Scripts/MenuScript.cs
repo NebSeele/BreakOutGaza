@@ -39,12 +39,12 @@ public class MenuScript : MonoBehaviour {
     }
 
     //Lets retry the level. Why won't this work? Even the Debug log won't work
-    public void RetryLevel()
+    public void retryLevel()
     {
         //Testing purposes
         Debug.Log ("Retry the Level");
         Time.timeScale = 1f;
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
 
     }
 
