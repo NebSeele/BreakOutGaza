@@ -61,10 +61,17 @@ public class MenuScript : MonoBehaviour {
 
         Debug.Log("High Score display not implemented");
     }
+
+    //Quit Game
     public void QuitGame()
     {
         Application.Quit();
         Debug.Log("Game has Quit! Thank You :)");
     }
-        
+     
+   /*
+    //Lets trigger the Mouse configuration in the options menu
+    public void ChangeInput()
+    { Paddle.m_touchInput =  }
+    */
 }

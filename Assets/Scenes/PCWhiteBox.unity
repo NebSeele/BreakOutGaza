@@ -5909,6 +5909,16 @@ Prefab:
       propertyPath: m_Name
       value: BlackBrick (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 82118732869901766, guid: efe5aaeed8cc4a44c836f3e7e72de21f,
+        type: 2}
+      propertyPath: rolloffMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 82118732869901766, guid: efe5aaeed8cc4a44c836f3e7e72de21f,
+        type: 2}
+      propertyPath: Priority
+      value: 114
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: efe5aaeed8cc4a44c836f3e7e72de21f, type: 2}
   m_IsPrefabParent: 0
@@ -11778,10 +11788,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 2
       objectReference: {fileID: 0}
-    - target: {fileID: 1932965201227332, guid: 6927a0ad2fb4a3a4bb90a2a23cb2ab4d, type: 2}
-      propertyPath: m_Name
-      value: SandBrick
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6927a0ad2fb4a3a4bb90a2a23cb2ab4d, type: 2}
   m_IsPrefabParent: 0
@@ -12154,6 +12160,11 @@ Prefab:
     - target: {fileID: 1932965201227332, guid: 6927a0ad2fb4a3a4bb90a2a23cb2ab4d, type: 2}
       propertyPath: m_Name
       value: SandBrick (31)
+      objectReference: {fileID: 0}
+    - target: {fileID: 82928896413660466, guid: 6927a0ad2fb4a3a4bb90a2a23cb2ab4d,
+        type: 2}
+      propertyPath: spreadCustomCurve.m_RotationOrder
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6927a0ad2fb4a3a4bb90a2a23cb2ab4d, type: 2}

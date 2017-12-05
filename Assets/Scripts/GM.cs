@@ -124,7 +124,7 @@ public class GM : MonoBehaviour
 		throw new NotImplementedException ();
 	}
 
-	/*  Does Game over really need this? Menuscript now has it to reset the level (Not that I can get level Reset to work).
+	/*  Level Reset now works in MenuScript, awaiting feedback on whether to keep or not
     void Reset()
     {
         Time.timeScale = 1f;
@@ -148,7 +148,7 @@ public class GM : MonoBehaviour
 
 	}
 
-	//Clones a Paddle Mesh. In weird, off centre ways
+	//Clones a Paddle Mesh.
 	void SetupPaddle ()
 	{
 		clonePaddle = Instantiate (m_paddlePrefab, transform.position, transform.rotation) as GameObject;
