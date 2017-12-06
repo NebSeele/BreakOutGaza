@@ -19,7 +19,7 @@ public class HighScore : MonoBehaviour {
     //View the High Scores
     public void ViewHighScore()
     {
-        m_currentHighScore.text = PlayerPrefs.GetInt("highScore", m_highScoreContainer).ToString();
+        m_currentHighScore.text = PlayerPrefs.GetInt("highScore").ToString();
     }
     
     //Erase High Score. It is public for the purposes of MenuScript

@@ -109,9 +109,17 @@ public class GM : MonoBehaviour
 		}
 
 		if (m_levelEnded) {
+
+            // Check if new high score
+            if (PlayerPrefs.GetInt("highScore") < m_score){
+                //Trigger for high score reward
+                PlayerPrefs.SetInt("highScore", m_score);
+            }
+
 			if (m_hudController != null)
 				m_hudController.DisplayEnd (m_levelCleared);
 			Time.timeScale = .25f;
+
 
 			//Invoke("Reset, resetDelay");
 		}
