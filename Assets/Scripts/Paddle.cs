@@ -9,7 +9,7 @@ public class Paddle : MonoBehaviour {
 	//private Vector3 playerPos = new Vector3 (0, -9.5f, 0);
     private Vector3 m_playerPos = new Vector3(0, 0, 0);
     [SerializeField] private bool m_touchInput = false;
-    public bool mouseInput = false;
+    
 
     private void Start()
     {
@@ -24,12 +24,6 @@ public class Paddle : MonoBehaviour {
         if (m_touchInput)
         {
             // set xPos to mouse screen pos, this sets the base of the touch system.
-            worldPoint = Camera.main.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, Camera.main.nearClipPlane));
-            xPos = worldPoint.x;
-        }
-        else if (mouseInput)
-        {
-            // set xPos to mouse screen pos
             worldPoint = Camera.main.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, Camera.main.nearClipPlane));
             xPos = worldPoint.x;
         }
