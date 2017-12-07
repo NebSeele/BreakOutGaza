@@ -105,7 +105,8 @@ AudioSource:
   m_GameObject: {fileID: 1932965201227332}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 243257694608082252, guid: fd0755f149fd0f24d9b0285496b5f172,
+    type: 2}
   m_audioClip: {fileID: 8300000, guid: 5f39627d119557f4aaf72eae115b17fa, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
@@ -210,6 +211,7 @@ MonoBehaviour:
   m_brickParticle: {fileID: 0}
   m_destroyedVersion: {fileID: 1756790397876146, guid: 6c3e883a01dc3934aa36622a1f7e8d2d,
     type: 2}
+  m_damageAudio: {fileID: 8300000, guid: f7e8c6f26d8ef9d489e89a607465f81f, type: 3}
 --- !u!114 &114986228457501916
 MonoBehaviour:
   m_ObjectHideFlags: 1

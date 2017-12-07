@@ -39,7 +39,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1470276915602452}
   m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: -4.9, y: -1.86, z: 0}
+  m_LocalPosition: {x: 4.9, y: -1.86, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -189,7 +189,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_shakeDuration: 0.75
-  m_shakeMultiplier: 1
+  m_shakeMultiplier: 2
   m_otherCollider: Player
 --- !u!114 &114566507052483834
 MonoBehaviour:
@@ -207,3 +207,4 @@ MonoBehaviour:
   m_brickParticle: {fileID: 0}
   m_destroyedVersion: {fileID: 1426100134292996, guid: 74d91132fa6479544a57512cb94bf835,
     type: 2}
+  m_damageAudio: {fileID: 8300000, guid: 6d200cd277c0302408890aa5e2c4ff30, type: 3}

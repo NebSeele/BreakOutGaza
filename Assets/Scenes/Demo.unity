@@ -9943,11 +9943,6 @@ Prefab:
       propertyPath: m_Name
       value: GoldBrick (9)
       objectReference: {fileID: 0}
-    - target: {fileID: 114346369057448706, guid: 008c615db996a434d8c4db2f20e46593,
-        type: 2}
-      propertyPath: m_shakeMultiplier
-      value: 2
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 008c615db996a434d8c4db2f20e46593, type: 2}
   m_IsPrefabParent: 0
@@ -9977,9 +9972,9 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 243972712102874580, guid: fd0755f149fd0f24d9b0285496b5f172,
     type: 2}
-  m_audioClip: {fileID: 8300000, guid: e959c639d6d2c1e4c8ea7eb0e5a8cd67, type: 3}
+  m_audioClip: {fileID: 8300000, guid: c493eeb96900b4f478c47af71401f18a, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.157
   m_Pitch: 1
   Loop: 1
   Mute: 0

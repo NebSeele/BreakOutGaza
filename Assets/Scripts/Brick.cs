@@ -14,6 +14,9 @@ public class Brick : MonoBehaviour {
     [SerializeField] private GameObject m_brickParticle;
     [SerializeField] private GameObject m_destroyedVersion;
 
+    [Header("Sound SFX")]
+    [SerializeField] private AudioClip m_damageAudio;
+
     //Settting the In Game counter for remaining bricks
     void Start()
     {
@@ -36,6 +39,12 @@ public class Brick : MonoBehaviour {
         {
             GM.Instance.PointCounter(m_pointValue[m_hitCount]);
             m_hitCount++;
+
+            if (m_hitCount < m_pointValue.Length)
+            {
+                GetComponent<AudioSource>().clip = m_damageAudio; 
+                GetComponent<AudioSource>().Play();
+            }
         }
 
         if (m_hitCount >= m_pointValue.Length && m_destructible)
