@@ -1,10 +1,13 @@
 fileFormatVersion: 2
 guid: aa68f5ad6f1cb4a45b2fa65a08c14b42
-timeCreated: 1512617560
+timeCreated: 1512653099
 licenseType: Free
 MonoImporter:
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - masterMixer: {fileID: 24100000, guid: fd0755f149fd0f24d9b0285496b5f172, type: 2}
+  - audioMixer: {fileID: 24100000, guid: fe906479a1e60aa4da22002e864b9915, type: 2}
+  - musicMixer: {fileID: 24100000, guid: cf8b5a0adcd2c724eb96423f046f2e0e, type: 2}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
