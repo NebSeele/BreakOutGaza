@@ -3,14 +3,47 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class CameraShake : MonoBehaviour {
-    //This script is more of a placeholder at this point in time. It will be expanded upon in the Polish pass.
+    public static CameraShake instance;
 
-    /// <summary>
-    /// Shakes the camera
-    /// </summary>
-    /// <param name="value">The shake multiplier</param>
-    public void Shake(float value)
+    private Vector3 _originalPos;
+    private float _timeAtCurrentFrame;
+    private float _timeAtLastFrame;
+    private float _fakeDelta;
+    [SerializeField] private float m_shakeAmount = 0.05f;
+
+    void Awake()
     {
-        Debug.Log("Shake the Camera");
+        instance = this;
+    }
+
+    void Update()
+    {
+        // Calculate a fake delta time, so we can Shake while game is paused.
+        _timeAtCurrentFrame = Time.realtimeSinceStartup;
+        _fakeDelta = _timeAtCurrentFrame - _timeAtLastFrame;
+        _timeAtLastFrame = _timeAtCurrentFrame;
+    }
+
+    public void Shake(float duration, float amount)
+    {
+        instance._originalPos = instance.gameObject.transform.localPosition;
+        instance.StopAllCoroutines();
+        instance.StartCoroutine(instance.cShake(duration, amount*m_shakeAmount));
+    }
+
+    public IEnumerator cShake(float duration, float amount)
+    {
+        float endTime = Time.time + duration;
+
+        while (duration > 0)
+        {
+            transform.localPosition = _originalPos + Random.insideUnitSphere * amount;
+
+            duration -= _fakeDelta;
+
+            yield return null;
+        }
+
+        transform.localPosition = _originalPos;
     }
 }

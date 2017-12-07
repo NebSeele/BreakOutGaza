@@ -12,7 +12,6 @@ public class Paddle : MonoBehaviour {
     
 
     private enum InputState { mouse, keyboard, touch};
-
     [SerializeField] private InputState inputState = InputState.keyboard;
 
     private void Start()
@@ -31,9 +30,6 @@ public class Paddle : MonoBehaviour {
 
         float xPos = 0;
         Vector3 worldPoint = new Vector3();
-
-
-
 
         switch (inputState)
         {

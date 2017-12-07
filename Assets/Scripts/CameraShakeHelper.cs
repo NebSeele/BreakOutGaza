@@ -5,10 +5,12 @@ using UnityEngine;
 //The Helper script for CameraShake.cs
 public class CameraShakeHelper : MonoBehaviour
 {
-
+   
     private CameraShake m_cameraShake;
-    [SerializeField] float m_shakeMultiplier = 1.0f;
-    [SerializeField] string m_otherCollider = "Player";
+    [SerializeField] private float m_shakeDuration = 0.75f;
+    [SerializeField] private float m_shakeMultiplier = 1.0f;
+    [SerializeField] private string m_otherCollider = "Player";
+    
 
     // Use this for initialization
     void Start()
@@ -19,6 +21,6 @@ public class CameraShakeHelper : MonoBehaviour
     private void OnCollisionEnter(Collision other)
     {
         if (other.collider.tag == m_otherCollider)
-            m_cameraShake.Shake(m_shakeMultiplier);
+            m_cameraShake.Shake(m_shakeDuration, m_shakeMultiplier);
     }
 }

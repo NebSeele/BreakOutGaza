@@ -327,6 +327,7 @@ GameObject:
   - component: {fileID: 23103620550791476}
   - component: {fileID: 54144032624473374}
   - component: {fileID: 64241441719478772}
+  - component: {fileID: 114995848090932356}
   m_Layer: 8
   m_Name: Box001_Part_17
   m_TagString: Untagged
@@ -554,6 +555,7 @@ GameObject:
   - component: {fileID: 64359052560119672}
   - component: {fileID: 54742050163187478}
   - component: {fileID: 82263085306307158}
+  - component: {fileID: 114112370344516922}
   m_Layer: 8
   m_Name: GoldBrickShatter
   m_TagString: Untagged
@@ -1317,7 +1319,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1426100134292996}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 182.19397, y: 405.18637, z: -190.54288}
+  m_LocalPosition: {x: -27.98736, y: -3.9, z: -6.9}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4567945135020952}
@@ -6615,3 +6617,27 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 0
+--- !u!114 &114112370344516922
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1426100134292996}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1bc8cb31b2d5a0546b053ee89d1a2e59, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_despawnDuration: 7
+--- !u!114 &114995848090932356
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1211495016270820}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1bc8cb31b2d5a0546b053ee89d1a2e59, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_despawnDuration: 20

@@ -1,15 +1,17 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-// I am not sure this script is even needed anymore. The important parts are now in Brick.cs
+//Reworking Scripts on
 public class BrickDestruction : MonoBehaviour
 {
-    public GameObject destroyedVersion;
+    [SerializeField] private float m_despawnDuration = 5.0f;
 
-    private void OnMouseDown()
+    private void pieceScatter()
     {
-        Instantiate(destroyedVersion, transform.position, transform.rotation);
-        Destroy(gameObject);
-  
+        Debug.Log("Shards should scatter");
+    }
+    private void Awake()
+    {
+        Destroy(gameObject, m_despawnDuration);
     }
 }

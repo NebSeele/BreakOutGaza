@@ -192,6 +192,7 @@ GameObject:
   - component: {fileID: 4078770863747574}
   - component: {fileID: 54073028807592304}
   - component: {fileID: 82934605888253274}
+  - component: {fileID: 114472861849151242}
   m_Layer: 8
   m_Name: SandBrickDestroy
   m_TagString: Untagged
@@ -1146,3 +1147,15 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 0
+--- !u!114 &114472861849151242
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1756790397876146}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1bc8cb31b2d5a0546b053ee89d1a2e59, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_despawnDuration: 5
