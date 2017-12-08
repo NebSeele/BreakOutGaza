@@ -4412,6 +4412,11 @@ Prefab:
       value: 
       objectReference: {fileID: 243042362091492890, guid: fd0755f149fd0f24d9b0285496b5f172,
         type: 2}
+    - target: {fileID: 82473610009484690, guid: fa907cc68cc7190478d887237d4250f9,
+        type: 2}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: fa907cc68cc7190478d887237d4250f9, type: 2}
   m_IsPrefabParent: 0
@@ -5610,6 +5615,7 @@ MonoBehaviour:
   m_lives: 3
   m_infiniteLives: 0
   m_score: 0
+  m_brickDestroyedBonus: 0
   m_brickPrefabs:
   - {fileID: 1932965201227332, guid: 6927a0ad2fb4a3a4bb90a2a23cb2ab4d, type: 2}
   - {fileID: 1470276915602452, guid: 008c615db996a434d8c4db2f20e46593, type: 2}
@@ -5718,7 +5724,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1603780677280454, guid: eb1786a1caaf14e41a6d2002691048e0, type: 2}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1603780677280454, guid: eb1786a1caaf14e41a6d2002691048e0, type: 2}
       propertyPath: m_Layer

@@ -12,6 +12,7 @@ public class GM : MonoBehaviour
 	[SerializeField] private int m_lives = 3;
 	[SerializeField] private bool m_infiniteLives = false;
 	[SerializeField] private int m_score = 0;
+    [SerializeField] private int m_brickDestroyedBonus = 0;
 	private bool m_levelEnded = false;
 	private bool m_levelCleared = false;
 
@@ -145,7 +146,11 @@ public class GM : MonoBehaviour
 	{
           
 		if (!m_infiniteLives)
-			lives--;
+        {
+            lives--;
+        }
+
+        m_brickDestroyedBonus = 0;
 		
 		Destroy (clonePaddle);
 
@@ -163,18 +168,35 @@ public class GM : MonoBehaviour
 		//clonePaddle = Instantiate(m_paddlePrefab, transform.position, Quaternion.identity) as GameObject;
 	}
 
+    //Our scoring system
 	public void PointCounter (int value)
 	{
 		if (!m_levelEnded) {
-			// Debug.Log("Point Value : " + value);
-			score += value;
-		}
+            // Debug.Log("Point Value : " + value);
+            {
+                score += value;
+                if (m_brickDestroyedBonus >= 10)
+                {
+                    score += (value + (1000 * m_lives));
+
+                    m_brickDestroyedBonus = 0;
+                }
+            }
+        }
+        if (m_brickCount < 1)
+        {
+            score += value + 500;
+            if (m_levelCleared)
+                { score += (value + (2000 * m_lives)); }
+        }
+
 	}
 	//Lets destroy bricks, as long as there are bricks to destroy
 	public void DestroyBrick ()
 	{
 		if (!m_levelEnded) {
 			m_brickCount--;
+            m_brickDestroyedBonus++;
 		}
 		CheckGameOver ();
 	}
