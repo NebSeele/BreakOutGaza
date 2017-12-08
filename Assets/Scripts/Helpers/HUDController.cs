@@ -10,6 +10,9 @@ public class HUDController : MonoBehaviour {
     [SerializeField] private Text livesText;
     [SerializeField] private Text scoreText;
 
+
+    [SerializeField] private Text highScoreText;
+
     [Header("End Menu Elements")]
     [SerializeField] private Image m_gameOverText;
     [SerializeField] private Image m_levelClearedText;
@@ -43,6 +46,10 @@ public class HUDController : MonoBehaviour {
 
         // Play anim in the future
         m_endMenuRectTransform.position = m_endMenuBasePos;
+
+        //Display Params
+        highScoreText.text = PlayerPrefs.GetInt("highScore").ToString();
+
     }
     
 

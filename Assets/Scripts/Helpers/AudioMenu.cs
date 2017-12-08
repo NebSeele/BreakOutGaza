@@ -4,13 +4,14 @@ using UnityEngine;
 
 public class AudioMenu : MonoBehaviour {
 
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+    [SerializeField] private AudioClip m_audioClip;
+
+
+
+    public void OnMouseDown()
+    {
+        GetComponent<AudioSource>().clip = m_audioClip;
+        GetComponent<AudioSource>().Play();
+      
+    }
 }

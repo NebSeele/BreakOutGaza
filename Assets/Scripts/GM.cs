@@ -186,8 +186,7 @@ public class GM : MonoBehaviour
         if (m_brickCount < 1)
         {
             score += value + 500;
-            if (m_levelCleared)
-                { score += (value + (2000 * m_lives)); }
+            score += (value + (2000 * m_lives)); 
         }
 
 	}

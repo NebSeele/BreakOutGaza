@@ -8,33 +8,22 @@ using UnityEngine.UI;
 public class HighScore : MonoBehaviour {
     
     //Usual headers, declared Variables
-    public int scoreCarryOver;
-    private int m_highScoreContainer;
-    private Text highScore;
-    [SerializeField] private Text m_currentHighScore;
+    [SerializeField] private Text highScoreText;
 
-    //Lets set up the array
+
+    //This is the Main Menu High Score Controller
 
     
-    //View the High Scores
+    //View the High Score
     public void ViewHighScore()
     {
-        m_currentHighScore.text = PlayerPrefs.GetInt("highScore").ToString();
+        highScoreText.text = PlayerPrefs.GetInt("highScore").ToString();
     }
     
     //Erase High Score. It is public for the purposes of MenuScript
     public void EraseHighScore()
     {
-    //    PlayerPrefs.DeleteKey("highScore", m_highScoreContainer);
+        PlayerPrefs.DeleteKey("highScore");
     }
 
-    //Lets bring score over from the GM script via scoreCarryOver
-    void CheckHighScore ()
-    { 
-     if (scoreCarryOver > PlayerPrefs.GetInt("highScore", m_highScoreContainer))
-        {
-            PlayerPrefs.SetInt("highScore", m_highScoreContainer);
-            scoreCarryOver = 0;
-        }
-    }
 }
