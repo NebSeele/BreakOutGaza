@@ -757,7 +757,8 @@ Prefab:
         type: 2}
       propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 345236307}
+      objectReference: {fileID: 114972648823153750, guid: 70dee70a63dba8548ac8a9ce9fe1dcc3,
+        type: 2}
     - target: {fileID: 114124851570263720, guid: ab60058e7dbdb4b49ad09bb7e94444fe,
         type: 2}
       propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
@@ -787,7 +788,8 @@ Prefab:
         type: 2}
       propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 345236307}
+      objectReference: {fileID: 114972648823153750, guid: 70dee70a63dba8548ac8a9ce9fe1dcc3,
+        type: 2}
     - target: {fileID: 114128034413938214, guid: ab60058e7dbdb4b49ad09bb7e94444fe,
         type: 2}
       propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
@@ -812,7 +814,8 @@ Prefab:
         type: 2}
       propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 345236307}
+      objectReference: {fileID: 114972648823153750, guid: 70dee70a63dba8548ac8a9ce9fe1dcc3,
+        type: 2}
     - target: {fileID: 114075298364314440, guid: ab60058e7dbdb4b49ad09bb7e94444fe,
         type: 2}
       propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
@@ -855,12 +858,6 @@ RectTransform:
   m_PrefabParentObject: {fileID: 224630500418350342, guid: ab60058e7dbdb4b49ad09bb7e94444fe,
     type: 2}
   m_PrefabInternal: {fileID: 345236305}
---- !u!114 &345236307 stripped
-MonoBehaviour:
-  m_PrefabParentObject: {fileID: 114841468880766702, guid: ab60058e7dbdb4b49ad09bb7e94444fe,
-    type: 2}
-  m_PrefabInternal: {fileID: 345236305}
-  m_Script: {fileID: 11500000, guid: aa68f5ad6f1cb4a45b2fa65a08c14b42, type: 3}
 --- !u!1 &345236308 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1739202145913194, guid: ab60058e7dbdb4b49ad09bb7e94444fe,
@@ -3824,6 +3821,48 @@ Prefab:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 9de3f7a1f7e01ed418f0ca213817ae2a, type: 2}
+  m_IsPrefabParent: 0
+--- !u!1001 &1507017942
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4530593751610148, guid: 70dee70a63dba8548ac8a9ce9fe1dcc3, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0.98876953
+      objectReference: {fileID: 0}
+    - target: {fileID: 4530593751610148, guid: 70dee70a63dba8548ac8a9ce9fe1dcc3, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 9.674072
+      objectReference: {fileID: 0}
+    - target: {fileID: 4530593751610148, guid: 70dee70a63dba8548ac8a9ce9fe1dcc3, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 1.65625
+      objectReference: {fileID: 0}
+    - target: {fileID: 4530593751610148, guid: 70dee70a63dba8548ac8a9ce9fe1dcc3, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4530593751610148, guid: 70dee70a63dba8548ac8a9ce9fe1dcc3, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4530593751610148, guid: 70dee70a63dba8548ac8a9ce9fe1dcc3, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4530593751610148, guid: 70dee70a63dba8548ac8a9ce9fe1dcc3, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4530593751610148, guid: 70dee70a63dba8548ac8a9ce9fe1dcc3, type: 2}
+      propertyPath: m_RootOrder
+      value: 46
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 70dee70a63dba8548ac8a9ce9fe1dcc3, type: 2}
   m_IsPrefabParent: 0
 --- !u!1 &1547154552
 GameObject:

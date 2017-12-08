@@ -157,7 +157,7 @@ GameObject:
   - component: {fileID: 224218281117830460}
   - component: {fileID: 114891258570962706}
   m_Layer: 5
-  m_Name: SoundSlider
+  m_Name: MusicSlider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -344,14 +344,13 @@ GameObject:
   - component: {fileID: 224913052590735422}
   - component: {fileID: 222517395443982356}
   - component: {fileID: 114715032617097540}
-  - component: {fileID: 114367285640111056}
   m_Layer: 5
   m_Name: OptionsMenuBorder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!1 &1400232441823916
 GameObject:
   m_ObjectHideFlags: 0
@@ -569,7 +568,7 @@ GameObject:
   - component: {fileID: 224201473124196792}
   - component: {fileID: 114697329845927266}
   m_Layer: 5
-  m_Name: MusicSlider
+  m_Name: AudioSlider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1011,13 +1010,14 @@ MonoBehaviour:
   m_HandleRect: {fileID: 0}
   m_Direction: 0
   m_MinValue: -80
-  m_MaxValue: 1
+  m_MaxValue: 0
   m_WholeNumbers: 0
-  m_Value: -47.4
+  m_Value: 0
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 114367285640111056}
+      - m_Target: {fileID: 114972648823153750, guid: 70dee70a63dba8548ac8a9ce9fe1dcc3,
+          type: 2}
         m_MethodName: SetMaster
         m_Mode: 0
         m_Arguments:
@@ -2101,20 +2101,6 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
---- !u!114 &114367285640111056
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1389011174173856}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aa68f5ad6f1cb4a45b2fa65a08c14b42, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  masterMixer: {fileID: 24100000, guid: fd0755f149fd0f24d9b0285496b5f172, type: 2}
-  audioMixer: {fileID: 24100000, guid: fd0755f149fd0f24d9b0285496b5f172, type: 2}
-  musicMixer: {fileID: 24100000, guid: fd0755f149fd0f24d9b0285496b5f172, type: 2}
 --- !u!114 &114401360966466306
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2871,14 +2857,15 @@ MonoBehaviour:
   m_HandleRect: {fileID: 0}
   m_Direction: 0
   m_MinValue: -80
-  m_MaxValue: 1
+  m_MaxValue: 0
   m_WholeNumbers: 0
-  m_Value: 1
+  m_Value: 0
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 114367285640111056}
-        m_MethodName: SetMusic
+      - m_Target: {fileID: 114972648823153750, guid: 70dee70a63dba8548ac8a9ce9fe1dcc3,
+          type: 2}
+        m_MethodName: SetAudio
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3305,14 +3292,14 @@ MonoBehaviour:
   m_HandleRect: {fileID: 0}
   m_Direction: 0
   m_MinValue: -80
-  m_MaxValue: 1
+  m_MaxValue: 0
   m_WholeNumbers: 0
-  m_Value: 1
+  m_Value: 0
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 114367285640111056}
-        m_MethodName: SetAudio
+      - m_Target: {fileID: 0}
+        m_MethodName: SetMusic
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3867,8 +3854,8 @@ RectTransform:
   m_Children:
   - {fileID: 224408895832031180}
   - {fileID: 224899908523329208}
-  - {fileID: 224876383117179244}
   - {fileID: 224375754299643860}
+  - {fileID: 224876383117179244}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -4004,7 +3991,7 @@ RectTransform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0.31, y: 1}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 10, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -4156,7 +4143,7 @@ RectTransform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0.40749997, y: 1}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 10, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -4231,7 +4218,7 @@ RectTransform:
   - {fileID: 224810497889368582}
   - {fileID: 224363764664473798}
   m_Father: {fileID: 224071955939440918}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -4331,8 +4318,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 6.4400005}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -384, y: -122.00003}
-  m_SizeDelta: {x: -650.7001, y: -512.1}
+  m_AnchoredPosition: {x: -398, y: -135}
+  m_SizeDelta: {x: -875.9, y: -512.1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224507075051831298
 RectTransform:
@@ -4657,7 +4644,7 @@ RectTransform:
   m_Children:
   - {fileID: 224913052590735422}
   m_Father: {fileID: 224071955939440918}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -4718,7 +4705,7 @@ RectTransform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0.31, y: 1}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 10, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}

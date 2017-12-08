@@ -5888,20 +5888,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 114017136102211630, guid: fa907cc68cc7190478d887237d4250f9,
-        type: 2}
-      propertyPath: ScrollX
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114017136102211630, guid: fa907cc68cc7190478d887237d4250f9,
-        type: 2}
-      propertyPath: ScrollY
-      value: -0.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4869157986962596, guid: fa907cc68cc7190478d887237d4250f9, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: -148.011
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: fa907cc68cc7190478d887237d4250f9, type: 2}
   m_IsPrefabParent: 0
@@ -6006,6 +5992,48 @@ Prefab:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: efe5aaeed8cc4a44c836f3e7e72de21f, type: 2}
+  m_IsPrefabParent: 0
+--- !u!1001 &694907855
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4530593751610148, guid: 70dee70a63dba8548ac8a9ce9fe1dcc3, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0.98876953
+      objectReference: {fileID: 0}
+    - target: {fileID: 4530593751610148, guid: 70dee70a63dba8548ac8a9ce9fe1dcc3, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 9.674072
+      objectReference: {fileID: 0}
+    - target: {fileID: 4530593751610148, guid: 70dee70a63dba8548ac8a9ce9fe1dcc3, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 1.65625
+      objectReference: {fileID: 0}
+    - target: {fileID: 4530593751610148, guid: 70dee70a63dba8548ac8a9ce9fe1dcc3, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4530593751610148, guid: 70dee70a63dba8548ac8a9ce9fe1dcc3, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4530593751610148, guid: 70dee70a63dba8548ac8a9ce9fe1dcc3, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4530593751610148, guid: 70dee70a63dba8548ac8a9ce9fe1dcc3, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4530593751610148, guid: 70dee70a63dba8548ac8a9ce9fe1dcc3, type: 2}
+      propertyPath: m_RootOrder
+      value: 122
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 70dee70a63dba8548ac8a9ce9fe1dcc3, type: 2}
   m_IsPrefabParent: 0
 --- !u!1001 &698818559
 Prefab:
@@ -6222,7 +6250,7 @@ Prefab:
         type: 2}
       propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 821927291}
+      objectReference: {fileID: 0}
     - target: {fileID: 114891258570962706, guid: d727e1868bfdbf74e9823fcc2ff9272e,
         type: 2}
       propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
@@ -6247,7 +6275,7 @@ Prefab:
         type: 2}
       propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 821927291}
+      objectReference: {fileID: 0}
     - target: {fileID: 114697329845927266, guid: d727e1868bfdbf74e9823fcc2ff9272e,
         type: 2}
       propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
@@ -6306,12 +6334,6 @@ GameObject:
   m_PrefabParentObject: {fileID: 1389011174173856, guid: d727e1868bfdbf74e9823fcc2ff9272e,
     type: 2}
   m_PrefabInternal: {fileID: 765024165}
---- !u!114 &821927291 stripped
-MonoBehaviour:
-  m_PrefabParentObject: {fileID: 114367285640111056, guid: d727e1868bfdbf74e9823fcc2ff9272e,
-    type: 2}
-  m_PrefabInternal: {fileID: 765024165}
-  m_Script: {fileID: 11500000, guid: aa68f5ad6f1cb4a45b2fa65a08c14b42, type: 3}
 --- !u!114 &821927294
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6448,7 +6470,6 @@ MonoBehaviour:
   m_lives: 3
   m_infiniteLives: 0
   m_score: 0
-  m_resetDelay: 1
   m_brickPrefabs: []
   m_paddlePrefab: {fileID: 1394657378684254, guid: 3e0779412213f464c9eece70bdaa0094,
     type: 2}

@@ -17,7 +17,7 @@ public class GM : MonoBehaviour
 
 	[Header ("Level Setup")]
 	private int m_brickCount = 0;
-	[SerializeField] private float m_resetDelay = 1f;
+//	[SerializeField] private float m_resetDelay = 1f;
 
 	[SerializeField] private GameObject[] m_brickPrefabs;
 
